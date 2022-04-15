@@ -62,7 +62,8 @@ export default {
   },
   methods: {
     submit () {
-      getInfo().then(res => {
+      const param = this.inputText
+      getInfo(param).then(res => {
         console.log(res)
       })
     },
