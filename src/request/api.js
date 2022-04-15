@@ -6,6 +6,6 @@ import base from './base'
 */
 const baseUrl = `${base.url}`
 // 获取用户名信息
-export const getInfo = (username) => {
-  return axios.get(`${baseUrl}/first`)
+export const getInfo = (inputText) => {
+  return axios.get(`${baseUrl}/getPythonResult?inputText=${inputText}`)
 }
